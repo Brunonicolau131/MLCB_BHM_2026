@@ -30,3 +30,17 @@
       modelo.fit(X_train_vec, y_train)    -        catalogamos os dataset que possuímos para realizar uma base de comparação com as futuras frases
 
       predicoes = modelo.predict(novas_frases_vec)    -      após elas serem vetorizadas e realizado a opreção para saber qual a intanção da frase.
+
+# LAB 02 - AULA 02 (MLCB): Naive Bayes e Probabilidades
+
+  --- RESULTADOS DO LAB 02 ---
+Mensagem de Teste: 'Gostaria de devolver o produto que comprei'
+Intenção Predita: troca_devolucao
+
+--- Distribuição de Probabilidades por Classe ---
+Classe [duvida_frete]: 27.99%
+Classe [rastrear_pedido]: 24.54%
+Classe [troca_devolucao]: 47.46%
+
+# Detalhe a função do Naive Bayes no algoritmo:
+   Função do Naive Bayes no algoritmo
