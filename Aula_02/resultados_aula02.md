@@ -33,14 +33,16 @@
 
 # LAB 02 - AULA 02 (MLCB): Naive Bayes e Probabilidades
 
-  --- RESULTADOS DO LAB 02 ---
-Mensagem de Teste: 'Gostaria de devolver o produto que comprei'
-Intenção Predita: troca_devolucao
+             --- RESULTADOS DO LAB 02 ---
+          
+    Mensagem de Teste: 'Gostaria de devolver o produto que comprei'
+    Intenção Predita: troca_devolucao
 
---- Distribuição de Probabilidades por Classe ---
-Classe [duvida_frete]: 27.99%
-Classe [rastrear_pedido]: 24.54%
-Classe [troca_devolucao]: 47.46%
+      -- Distribuição de Probabilidades por Classe ---
+      
+              Classe [duvida_frete]: 27.99%
+              Classe [rastrear_pedido]: 24.54%
+              Classe [troca_devolucao]: 47.46%
 
 # Detalhe a função do Naive Bayes no algoritmo:
    Função do Naive Bayes no algoritmo
