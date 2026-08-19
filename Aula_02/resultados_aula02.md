@@ -35,6 +35,7 @@
 
 # LAB 02 - AULA 02 (MLCB): Naive Bayes e Probabilidades
 
+# 1 - Avaliem os resultados e verifiquem se os resultados foram corretos ou incorretos. Coloque a resposta no arquivo do relatório do laboratório
              --- RESULTADOS DO LAB 02 ---
           
     Mensagem de Teste: 'Gostaria de devolver o produto que comprei'
@@ -45,8 +46,11 @@
               Classe [duvida_frete]: 27.99%
               Classe [rastrear_pedido]: 24.54%
               Classe [troca_devolucao]: 47.46%
+# 2 - Detectado algum erro, qual seria a maneira mais correta de melhorar o resultado do algoritmo?
+    Não a erro.
 
-  # Detalhe a função do Naive Bayes no algoritmo:
+    
+# 3 - Detalhe a função do Naive Bayes no algorítmo.
     Naive Bayes analisa a mensagem e verifica com qual categoria ela mais se parece.
     Depois, ele calcula as probabilidades e escolhe a intenção mais provável como resposta
 
