@@ -54,7 +54,7 @@
 
 # LAB 03 - AULA 02 (MLCB): Preencha os blocos TODO
 
-  #1 - Qual foi a acurácia obtida pelo modelo no conjunto de teste e por que, em um dataset tão pequeno (9 exemplos), essa métrica pode ser enganosa?
+  # 1 - Qual foi a acurácia obtida pelo modelo no conjunto de teste e por que, em um dataset tão pequeno (9 exemplos), essa métrica pode ser enganosa?
     
     Acurácia do Modelo: 0.00%
     
