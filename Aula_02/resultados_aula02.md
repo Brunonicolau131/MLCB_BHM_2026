@@ -71,4 +71,46 @@
 
   # 3 - Qual é o risco de utilizar uma Árvore de Decisão sem limite de profundidade (max_depth) em datasets de texto maiores?
       um maior volume de processamento, e dependendo do tipo de frase, como o uma arvore de decisão, só foca em captar a intenção de uma determinada frase o inicio da frase, já e mais do que o suficiente para poder saber qual a sua intenção, assim sendo necessário o uso do max_depth 
+
+
+# LAB 04 - AULA 02 (MLCB): DESAFIO NLU PARA AGÊNCIA DE VIAGENS
+--- DATASET ---
+                                         mensagem          intencao
+0       Quero comprar uma passagem para São Paulo  comprar_passagem
+1          Gostaria de comprar uma passagem aérea  comprar_passagem
+2   Preciso reservar um voo para o Rio de Janeiro  comprar_passagem
+3       Quero adquirir uma passagem para Salvador  comprar_passagem
+4                    Quero cancelar minha reserva  cancelar_reserva
+5                 Preciso cancelar minha passagem  cancelar_reserva
+6                  Como faço para cancelar o voo?  cancelar_reserva
+7     Gostaria de cancelar minha reserva de hotel  cancelar_reserva
+8                    Quero falar com um atendente   falar_atendente
+9                Preciso conversar com uma pessoa   falar_atendente
+10            Gostaria de falar com o atendimento   falar_atendente
+11          Pode me encaminhar para um atendente?   falar_atendente
+
+--- RESULTADOS DO TESTE ---
+Mensagem: 'Gostaria de falar com o atendimento'
+Intenção real: [falar_atendente]
+Intenção predita: [falar_atendente]
+
+Mensagem: 'Preciso reservar um voo para o Rio de Janeiro'
+Intenção real: [comprar_passagem]
+Intenção predita: [falar_atendente]
+
+Mensagem: 'Como faço para cancelar o voo?'
+Intenção real: [cancelar_reserva]
+Intenção predita: [cancelar_reserva]
+
+--- RESULTADOS DO LAB 04 ---
+Mensagem: 'Gostaria de adquirir um voo para Recife' ==> Intenção Predita: [comprar_passagem]
+Mensagem: 'Preciso desistir da minha reserva' ==> Intenção Predita: [cancelar_reserva]
+Mensagem: 'Quero conversar com alguém do atendimento' ==> Intenção Predita: [falar_atendente]
+
+# justificativa técnica
+Escolhi o TF-IDF para transformar as frases em números e a Regressão Logística para identificar cada intenção.
+Nos testes, o modelo conseguiu classificar as novas frases de forma adequada.
+Como estou trabalhando com poucas frases, alguns resultados podem acabar não sendo perfeitos.
+Para melhorar o modelo, seria interessante adicionar mais exemplos ao dataset.
+
   
