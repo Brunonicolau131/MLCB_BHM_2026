@@ -45,4 +45,5 @@
               Classe [troca_devolucao]: 47.46%
 
 # Detalhe a função do Naive Bayes no algoritmo:
-   Função do Naive Bayes no algoritmo
+  Naive Bayes analisa a mensagem e verifica com qual categoria ela mais se parece.
+  Depois, ele calcula as probabilidades e escolhe a intenção mais provável como resposta
