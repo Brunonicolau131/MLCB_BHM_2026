@@ -31,6 +31,7 @@
 
       predicoes = modelo.predict(novas_frases_vec)    -      após elas serem vetorizadas e realizado a opreção para saber qual a intanção da frase.
 
+
 # LAB 02 - AULA 02 (MLCB): Naive Bayes e Probabilidades
 
              --- RESULTADOS DO LAB 02 ---
@@ -44,6 +45,25 @@
               Classe [rastrear_pedido]: 24.54%
               Classe [troca_devolucao]: 47.46%
 
-# Detalhe a função do Naive Bayes no algoritmo:
-  Naive Bayes analisa a mensagem e verifica com qual categoria ela mais se parece.
-  Depois, ele calcula as probabilidades e escolhe a intenção mais provável como resposta
+  # Detalhe a função do Naive Bayes no algoritmo:
+    Naive Bayes analisa a mensagem e verifica com qual categoria ela mais se parece.
+    Depois, ele calcula as probabilidades e escolhe a intenção mais provável como resposta
+
+
+
+# LAB 03 - AULA 02 (MLCB): Preencha os blocos TODO
+
+  #1 - Qual foi a acurácia obtida pelo modelo no conjunto de teste e por que, em um dataset tão pequeno (9 exemplos), essa métrica pode ser enganosa?
+    
+    Acurácia do Modelo: 0.00%
+    
+    0% porque não temos tanto exemplos a serem usados para treinar o modelo.
+    Sim o dataset pequeno como esse pode apresentar uma métrica enganosa.
+
+    
+  # 2 - Como o modelo de Árvore de Decisão (DecisionTreeClassifier) toma a decisão de separar as intenções do usuário?
+      Com base no dataset, criando divisões de treino que permitem com base no vector se a frase apresentada ela e ou nao verdadeira assim criando a     arvore de decisões com base nas palavras e conjuntos de palavras apresentadas.
+
+  # 3 - Qual é o risco de utilizar uma Árvore de Decisão sem limite de profundidade (max_depth) em datasets de texto maiores?
+      um maior volume de processamento, e dependendo do tipo de frase, como o uma arvore de decisão, só foca em captar a intenção de uma determinada frase o inicio da frase, já e mais do que o suficiente para poder saber qual a sua intenção, assim sendo necessário o uso do max_depth 
+  
