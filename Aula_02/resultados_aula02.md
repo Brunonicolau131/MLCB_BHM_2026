@@ -1,4 +1,5 @@
 # LAB 01 - AULA 02 (MLCB): Classificador de Intenções
+
   
   # 1 - Avaliem os resultados e verifiquem se os resultados foram corretos ou incorretos. Coloque a resposta no arquivo do relatório do laboratório
       
