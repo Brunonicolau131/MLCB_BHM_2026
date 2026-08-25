@@ -1,9 +1,9 @@
-# --- RESULTADOS DO LAB 01 (AULA 03) ---
+# LAB 01 (AULA 03) ---
 Mensagem: 'Preciso urgente da segunda via da fatura'
 Intenção Predita: [segunda_via]
 Vocabulário Filtrado (sem stopwords): ['2a', '2a via', 'aberto', 'acordo', 'acordo pagar', 'alterar', 'alterar endereço', 'app', 'atrasada', 'atualizo', 'atualizo dados', 'boleto', 'cadastramento', 'dados', 'dados residenciais', 'débito', 'débito aberto', 'dívida', 'emitir', 'emitir segunda', 'endereço', 'endereço cadastramento', 'fatura', 'fatura atrasada', 'fazer', 'fazer um', 'gostaria', 'gostaria alterar', 'negociar', 'negociar pagamento', 'no', 'no app', 'onde', 'onde atualizo', 'pagamento', 'pagamento dívida', 'pagar', 'pagar débito', 'posso', 'posso emitir', 'residenciais', 'residenciais no', 'segunda', 'segunda via', 'um', 'um acordo', 'via', 'via boleto', 'via fatura']
 
-#========== PRODUÇÃO DO RELATÓRIO:==============
+
 # 1 - Qual o impacto da remoção de stopwords no tamanho do vocabulário do modelo?
 Com a remoção de stopwords o modelo vai filtrar o vocabulário deixando apenas as palavras com real importância, removendo o excesso de palavras genericas
 
@@ -57,7 +57,7 @@ horario_atendimento       0.50      1.00      0.67         1
   pois ele apresenta uma proporção de previsão, que se a mais itens em um dos lados não haverá proporção assim causando esse engano.
 
 
-  --- RESULTADOS DO LAB 03 (AULA 03) ---
+ # --- LAB 03 (AULA 03) ---
 Acuracia via Pipeline: 0.00%
 
 --- Previsões ---
