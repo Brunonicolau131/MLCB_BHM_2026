@@ -55,3 +55,25 @@ horario_atendimento       0.50      1.00      0.67         1
 # 3 - Por que a acurácia isolada pode ser enganosa quando temos classes desbalanceadas?
 
   pois ele apresenta uma proporção de previsão, que se a mais itens em um dos lados não haverá proporção assim causando esse engano.
+
+
+  --- RESULTADOS DO LAB 03 (AULA 03) ---
+Acuracia via Pipeline: 0.00%
+
+--- Previsões ---
+Mensagem: Como solicitar minhas ferias?
+Intenção real: solicitar_ferias
+Intenção predita: enviar_atestado
+
+Mensagem: Quero agendar meu periodo de ferias
+Intenção real: solicitar_ferias
+Intenção predita: obter_holerite
+
+# 2 - Qual é a grande vantagem de utilizar o objeto Pipeline no Scikit-Learn?
+A principal vantagem do Pipeline é permitir organizar várias etapas do processo de Machine Learning em um único objeto.
+
+# 3 - Por que o Pipeline evita que erros de pré-processamento ocorram entre treino e teste?
+O Pipeline deixa tudo organizado e faz o pré-processamento sempre do mesmo jeito.
+Ele evita que os dados de teste sejam usados durante o treinamento do modelo.
+Assim, diminui os erros e deixa o resultado do modelo mais confiável.
+
