@@ -4,9 +4,9 @@ Instruções:
 2 - O loop deve solicitar obrigatoriamente 10 entradas manuais via input().
 3 - Em caso de confiança abaixo do limiar (50%), acione o Fallback direcionando o cliente para a equipe humana.
 
-# ==============================================================================
+
 # ATIVIDADE 1: CHATBOT VERSÃO 1 (KNN)
-# ==============================================================================
+
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -15,10 +15,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 
-# 1. Carregar dataset do CSV
 df = pd.read_csv('dataset_moveis_100.csv')
 
-# 2. Divisão Treino e Teste
 X_train, X_test, y_train, y_test = train_test_split(
     df['texto'],
     df['intencao'],
@@ -27,7 +25,6 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=df['intencao']
 )
 
-# TODO 1: Pipeline utilizando TF-IDF + KNN
 pipeline_knn = Pipeline([
     ('vectorizer', TfidfVectorizer(ngram_range=(1, 2))),
     ('classifier', KNeighborsClassifier(
@@ -36,10 +33,8 @@ pipeline_knn = Pipeline([
     ))
 ])
 
-# TODO 2: Treinar a pipeline
 pipeline_knn.fit(X_train, y_train)
 
-# TODO 3: Fazer as previsões e mostrar os resultados
 y_pred = pipeline_knn.predict(X_test)
 
 print("\n=== RELATÓRIO DE CLASSIFICAÇÃO ===")
@@ -49,9 +44,8 @@ print("\n=== MATRIZ DE CONFUSÃO ===")
 print(confusion_matrix(y_test, y_pred))
 
 
-# ==============================================================================
 # TESTES DO CHATBOT
-# ==============================================================================
+
 
 LIMIAR_CONFIANCA = 0.50
 
@@ -86,7 +80,7 @@ for i in range(1, 11):
             "Não consegui entender sua solicitação. "
             "Encaminhando para atendimento humano."
         )
- #Resultado terminal
+ # Resultado terminal
 
 
  === RELATÓRIO DE CLASSIFICAÇÃO ===
