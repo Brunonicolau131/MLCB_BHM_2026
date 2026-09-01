@@ -1,20 +1,22 @@
 # Atividade 1: Código Semi-Pronto - (Versão 1 — KNN com Fallback e 10 Testes Digitados)
 Instruções:
 1 - Complete os trechos marcados com # TODO para montar a pipeline usando KNN ($K=3$).
+
 2 - O loop deve solicitar obrigatoriamente 10 entradas manuais via input().
+
 3 - Em caso de confiança abaixo do limiar (50%), acione o Fallback direcionando o cliente para a equipe humana.
+
 
 
 # ATIVIDADE 1: CHATBOT VERSÃO 1 (KNN)
 
-import numpy as np
+import numpy as np  
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
-
 df = pd.read_csv('dataset_moveis_100.csv')
 
 X_train, X_test, y_train, y_test = train_test_split(
