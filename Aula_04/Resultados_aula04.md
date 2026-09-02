@@ -284,9 +284,6 @@ logistica_entregas       0.80      0.67      0.73         6
       weighted avg       0.82      0.77      0.75        30
 
 
-============================================================
-=== INICIANDO BATERIA DE TESTES (8 INPUTS OBRIGATÓRIOS) ===
-============================================================
 
 [Teste 1/8]
 Digite a frase do cliente: oi amor
@@ -319,10 +316,6 @@ Intenção prevista: trocas_devolucoes | Confiança: 100.0%
 [Teste 8/8]
 Digite a frase do cliente: se ta de palhaçada com minha cara
 Intenção prevista: vendas | Confiança: 100.0%
-
-============================================================
-=== FINAL DOS 8 TESTES ===
-============================================================
 
 
 
